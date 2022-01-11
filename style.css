@@ -2,31 +2,98 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
-
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+}
+/* Start of header */
+.red {
+  color: #04AA6D;
+}
+header {
+  padding: 15px;
+  background-color: #181172;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 100%;
+}
+/* End of header */
+/* Start of contents body */
+#contentsbody {
+  width: 100%;
+  min-height: 75vmin;
+}
 .left {
   background-color: #2196F3;
   padding: 20px;
   float: left;
   width: 20%; /* The width is 20%, by default */
 }
+#headermenu {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+}
+
+
 
 .main {
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 20px 50px;
   float: left;
   width: 60%; /* The width is 60%, by default */
+  text-align: left;
 }
 
+.main h1::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #2196F3;
+  display: block;
+  margin-bottom: 15px;
+}
+#aboutme {
+  text-align: left;
+  margin-bottom: 15px;
+}
+#myskills .container{
+  flex-direction: row;
+}
 .right {
   background-color: #04AA6D;
   padding: 20px;
   float: left;
   width: 20%; /* The width is 20%, by default */
 }
+/* End of contents body */
+/* footer */
+#ending {
+  height: 50px;
+  width: 100%;
+  background-color: #181172;
+  color: #04AA6D;
+  text-align: center;
+}
+#ending h6{
+  padding: 5px;
+}
+.icons{
+  color: #fff;
+}
+/* end of footer */
 
 /* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }

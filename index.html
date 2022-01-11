@@ -3,29 +3,92 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
-    <header>
-      <h2>Media Queries</h2>
-      <p>Resize the browser window.</p>
+    <div class="container">
+      <!-- start of header -->
+      <header>
+        <h1>Piggy <span class="red">Inu</span></h1>
+      </header>
+      <!-- end of header -->
+      <!-- start of main -->
+      <div id="contentsbody">
+        <div class="left">
+          <p><div id="headermenu">
+            <a href="index.html"><img src="logo.png" alt="logo"/></a>
+            <ul>
+              <li><a href="#main">Home</a></li>
+              <li><a href="#intro">About</a></li>
+              <li><a href="#project">Red Shark</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          </p>
+        </div>
+        
+        <div class="main">
+          <div id="aboutme">
+            <h1>About Me</h1>
+            <p>
+              My name is <strong>Piggy Inu</strong>. Name is inspired by Doggie
+              Inu and Kitty Inu.
+            </p>
+          </div>
 
-      <p>
-        Make sure you reach the breakpoint at 800px when resizing this frame.
-      </p>
-    </header>
-
-    <div class="left">
-      <p>Left Menu</p>
+          <div id="myskills">
+            <div>
+            <h2>Skills</h2>
+              <p>
+                <code>HTML, CSS, JavaScript</code>.<br />
+                We specialize in:
+              </p>
+              <ol>
+                <li>Feeding Inus</li>
+                <li>Replicating as many Inus as possible</li>
+                <li>Putting Inus to sleep</li>
+              </ol>
+            </div>
+            <div>
+              <h2>Education</h2>
+              <p>
+                <a
+                  href="https://scale.nus.edu.sg/nus-sgunited-skills/overview"
+                  target="_blank"
+                  >NUS SGUS Programme in International Financial Technology
+                  (FinTech) for non-Technical Executives</a
+                >
+              </p>
+            </div>
+            <div>
+              <h2>Goals in my Life</h2>
+              <p>Creating lotssssssss of Blockchain Projects</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="right">
+          <p>Right Content</p>
+        </div>
+      </div>
+      <!-- end of main -->
+      
+      <!-- start of footer -->
+      <footer id="ending">
+        <div class="footer">
+          <h6>Copyright © 2021 All rights reserved</h6>
+        </div>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </footer>
+      <!-- end of footer -->
     </div>
-
-    <div class="main">
-      <p>Main Content</p>
-    </div>
-
-    <div class="right">
-      <p>Right Content</p>
-    </div>
-
-    <footer></footer>
   </body>
 </html>
