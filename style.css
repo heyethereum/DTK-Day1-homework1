@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
   //text-align: center;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 .container {
   min-height: 100vh;
   width: 100%;
@@ -44,26 +48,57 @@ header img {
 /* End of header */
 /* Start of contents body */
 #contentsbody {
-  display: inline-block;
+  display: flex;
   width: 100%;
   min-height: 75vmin;
 }
 /* Start of left contents */
-.left {
-  
+.left { 
   background-color: #2196F3;
   padding: 20px;
   float: left;
   width: 20%; /* The width is 20%, by default */
-  height: 100%;
   //border: 2px solid #000;
 }
-#headermenu {
+.project{
+  color: #fff;
+  margin-bottom: 20px;
+}
+#leftmenu {
   display: inline-block;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  flex-direction: column;
+  //flex-direction: column;
+  //border: #000 solid 2px;
+}
+#leftmenu li {
+  display: flex;
+  list-style: none;
+  //border: #000 solid 2px; 
+  //padding:15px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#leftmenu li a {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+.mybtn {
+  display: flex;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center; 
+  border: 2px crimson solid;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border-radius: 20px;
+}
+.mybtn:hover {
+  background-color:crimson;
+  transition: 1s;
 }
 /* End of left contents */
 /* Start of center body */
@@ -84,10 +119,10 @@ header img {
 }
 .cards{
   display: flex;
-  flex: 1 1 0%;
+  //flex: 1 1 0%;
   flex-direction: column;
   position: relative;
-  margin: 0.75rem;
+  margin: 1.5rem;
   border-radius: 1rem;
   min-width: 320px;
   background-color: rgb(130, 72, 229);
@@ -95,10 +130,10 @@ header img {
   background-size: 150%;
   background-position: 100px center;
   background-repeat: no-repeat;
+  overflow: hidden;
   color: #fff;
   padding: 1.2rem;
 }
-
 
 #aboutme {
   text-align: left;
@@ -126,6 +161,7 @@ header img {
   justify-content: center;
   background: rgb(255, 222, 45) none repeat scroll 0% 0%;
 }
+
 #skillimg img {
   height: 110px;
   width: 110px;
@@ -135,16 +171,27 @@ header img {
 }
 /* End of center body */
 /* Start of right contents */
+#showcase {
+  color: #fff;
+  margin-bottom: 15px;
+}
 .right {
   background-color: #04AA6D;
-  padding: 20px;
+  padding: 30px;
   float: left;
   width: 20%; /* The width is 20%, by default */
-  border: solid 2px #000;
 }
 .rightimg {
-  //max-width: 130px;
+  padding: 4px;
+  box-shadow: rgb(100, 48, 188) 0px 0px 12px;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(130, 72, 229) 0%, rgb(229, 72, 213) 100%) repeat scroll 0% 0%;
+  margin-bottom: 20px;
+  border-radius: 1.25rem;
 }
+.rightimg img{
+  width: 100%;
+}
+
 /* End of right contents */
 /* End of contents body */
 /* footer */
@@ -168,5 +215,11 @@ header img {
 @media screen and (max-width: 800px) {
   .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #contentsbody {
+    display: inline-block;
+  }
+  #leftmenu li{
+    display: inline-block;
   }
 }
