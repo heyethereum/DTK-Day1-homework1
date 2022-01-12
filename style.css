@@ -56,6 +56,8 @@ header img {
 /* Start of left contents */
 .left { 
   background-color: #2196F3;
+  background-image: url("https://cdn.glitch.global/f3d97f54-e306-495f-b941-ebe0d9e01dd2/thread_lavender.svg");
+  overflow: hidden;
   padding: 20px;
   float: left;
   width: 20%; /* The width is 20%, by default */
@@ -196,6 +198,8 @@ header img {
 }
 .right {
   background-color: #04AA6D;
+  background-image: url("https://cdn.glitch.global/f3d97f54-e306-495f-b941-ebe0d9e01dd2/thread_lavender.svg");
+  overflow: hidden;
   padding: 30px;
   float: left;
   width: 20%; /* The width is 20%, by default */
