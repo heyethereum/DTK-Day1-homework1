@@ -1,3 +1,24 @@
-* {
-    padding: 0.2rem;
+*{
+    padding: 0;
+    margin: 0;
+}
+#leftcontent {
+    background-color: #2196F3;
+    color: #fff;
+}
+#centercontent {
+    background-color: #f1f1f1;
+    color: #000;
+}
+#rightcontent {
+    background-color: #04AA6D;
+    color: #fff;
+}
+/* #mybox {
+    display: flex;
+    flex-direction: column;
+} */
+#goals{
+    background-color: rgb(130, 72, 229);
+    color: #fff;
 }
